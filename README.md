@@ -38,10 +38,27 @@ Hello_agents/
 
 ## 安装和使用
 
-### 依赖
+### 创建 Conda 环境
+
 ```bash
-pip install openai python-dotenv  # Chapter 1 & 3
-pip install torch transformers    # Chapter 2
+# 创建 Python 3.10 环境
+conda create -n hello_agents python=3.10
+
+# 激活环境
+conda activate hello_agents
+```
+
+### 安装依赖
+
+```bash
+# Chapter 1 & 3 依赖
+pip install openai python-dotenv
+
+# Chapter 2 依赖（PyTorch 和 Transformers）
+pip install torch torchvision torchaudio transformers
+
+# 或者使用 conda 安装 PyTorch（推荐 GPU 用户）
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 
 ### 配置（Chapter 1 & 3）

@@ -1,7 +1,7 @@
 import os
 import re
 # 假设 AgentLLM 在同级目录下，如果是文件夹里，请确保路径正确
-from llm_call import AgentLLM 
+from Chapter3_ReAct.ReAct.llm_call import AgentLLM 
 # 【修改点1】去掉相对导入的点
 from tool.tool_excute import ToolExecutor
 from tool.search_tool import search, __dec__ as search_description
